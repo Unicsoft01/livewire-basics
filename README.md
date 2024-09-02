@@ -20,7 +20,12 @@ php artisan livewire:layout
 ## create a compononent to demonstrate how livewire works
 
 ###### the created component act as a controller for the view page. the logic of the page would be done in this file
+
 ```php
 php artisan livewire:make TestPage
 ```
-##### 
+##### Make Component for displaying listt of cars
+
+```php
+php artisan livewire:make CarList
+```
