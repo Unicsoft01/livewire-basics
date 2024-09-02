@@ -11,7 +11,16 @@
 
                 <!-- Menu Toggle Button -->
                 <div class="topbar-item">
-                    {{-- {{ $header }} - issue to be fix --}}
+                    {{-- -  --}}
+                    @if (isset($header))
+                    <h4 class="fw-bold topbar-button pe-none text-uppercase mb-0">
+                        {{ $header }} {{ Auth::User()->name }}
+                    </h4>
+                    @else
+                        <h4 class="fw-bold topbar-button pe-none text-uppercase mb-0">
+                            User Dashboard
+                        </h4>
+                    @endif
                 </div>
             </div>
 
