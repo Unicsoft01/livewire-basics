@@ -29,3 +29,13 @@ php artisan livewire:make TestPage
 ```php
 php artisan livewire:make CarList
 ```
+##### In order to fully customize livewire publish livewire default config file
+```php
+php artisan livewire:publish --config
+```
+
+##### make custom layouts after redirecting the default view to resources/views
+
+```php
+ php artisan make:livewire layouts.header
+```
